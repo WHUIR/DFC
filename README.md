@@ -16,7 +16,7 @@ sqchen@whu.edu.cn
 Each training sample is a document,which was preprocessed to remove stop words,  and each word is separated by space.
 Example: training testing data
 
-# Catelog File
+### Catelog File
 Catalog file is uesd to describe category information. The catalog file of data set '20 news groups' sholud be wrote in this form :
 Example:
 cate
@@ -31,13 +31,13 @@ comp.os.ms-windows.misc
 comp.sys.ibm.pc.hardware 
 comp.windows.x 
 comp.sys.mac.hardware
- cate 
+cate 
 sci.crypt 
 sci.med 
 sci.space 
 sci.electronics ...
  
-# Note:
+#### Note:
 The directory “catalog-classification” is for classification task without filtering.The file only contains the categories for classification task.
 The directory “catalog-classificationWithFiltering” is for classification with filtering task.The file contains all the categories in dataset.The specifed categories are in the heading, the remaining are irrelevant categories.
 Example:
