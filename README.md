@@ -1,7 +1,8 @@
 DFC
 ====
 
-The java implementation of "Seed-Guided Topic Model for Document Filtering and Classification ", TOIS 2018.
+The java implementation of "Seed-Guided Topic Model for Document Filtering and Classification ", TOIS 2018. 
+
 The model DFC proposed in this paper is an effective topic model for dataless text classification and filtering task.
 Feel free to contact me if you find any problem in the package.
 sqchen@whu.edu.cn 
