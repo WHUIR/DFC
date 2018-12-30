@@ -17,17 +17,15 @@ Each training sample is a document,which was preprocessed to remove stop words, 
 Example: training testing data
 
 ### Catelog File
-Catalog file is uesd to describe category information. The catalog file of data set '20 news groups' sholud be wrote in this form : 
-
+Catalog file is uesd to describe category information. The catalog file of data set '20 news groups' sholud be wrote in this form :  
 Example: 
-cate 
-comp.graphics 
-cate 
-sci.med ... 
+cate  
+comp.graphics  
+cate  
+sci.med ...  
   
-If we want to combine several categories into one , take 'comp' and 'sci' as examples , then the file should be wrote like this : 
-
-Example: 
+If we want to combine several categories into one , take 'comp' and 'sci' as examples , then the file should be wrote like this :  
+Example:  
 cate  
 comp.graphics  
 comp.os.ms-windows.misc  
