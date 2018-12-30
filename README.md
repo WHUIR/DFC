@@ -18,43 +18,58 @@ Example: training testing data
 
 ### Catelog File
 Catalog file is uesd to describe category information. The catalog file of data set '20 news groups' sholud be wrote in this form : 
-  Example: 
-  cate 
-  comp.graphics 
-  cate 
-  sci.med ... 
-  If we want to combine several categories into one , take 'comp' and 'sci' as examples , then the file should be wrote like this : 
-  Example: 
-  cate  
-  comp.graphics  
-  comp.os.ms-windows.misc  
-  comp.sys.ibm.pc.hardware  
-  comp.windows.x  
-  comp.sys.mac.hardware 
-  cate  
-  sci.crypt  
-  sci.med  
-  sci.space  
-  sci.electronics ... 
+
+Example: 
+cate 
+comp.graphics 
+cate 
+sci.med ... 
+  
+  
+If we want to combine several categories into one , take 'comp' and 'sci' as examples , then the file should be wrote like this : 
+
+Example: 
+cate  
+comp.graphics  
+comp.os.ms-windows.misc  
+comp.sys.ibm.pc.hardware  
+comp.windows.x  
+comp.sys.mac.hardware 
+cate  
+sci.crypt  
+sci.med  
+sci.space  
+sci.electronics ... 
  
 #### Note:
 The directory “catalog-classification” is for classification task without filtering.The file only contains the categories for classification task. 
-    The directory “catalog-classificationWithFiltering” is for classification with filtering task.The file contains all the categories in dataset.The specifed categories are in the heading, the remaining are irrelevant categories. 
-    Example: 
-    Classification with filtering task: med-space. med and space are specifed categories, others are irrelevant categories. 
-    cate 
-    med 
-    cate 
-    space 
-    cate 
-    sci.crypt 
-    cate  
-    sci.electronics ... 
+
+The directory “catalog-classificationWithFiltering” is for classification with filtering task.The file contains all the categories in dataset.The specifed categories are in the heading, the remaining are irrelevant categories. 
+
+Example: 
+Classification with filtering task: med-space. med and space are specifed categories, others are irrelevant categories. 
+
+cate 
+
+med 
+
+cate 
+
+space 
+
+cate 
+sci.crypt 
+
+cate 
+
+sci.electronics ... 
 
 # Seed Word File
-    Each line in seed word file corresponds to a category.Seed word is separated by space.Make sure that the category order in catalog file is the same as the order in seed word file. 
-    LDA File 
-    we take the LDA results after running LDA over 100 iterations, using the default parameter setting(Toolkit:JGibbLDA http://jgibblda.sourceforge.net/)
+Each line in seed word file corresponds to a category.Seed word is separated by space.Make sure that the category order in catalog file is the same as the order in seed word file. 
+
+LDA File 
+
+we take the LDA results after running LDA over 100 iterations, using the default parameter setting(Toolkit:JGibbLDA http://jgibblda.sourceforge.net/)
 
 ## Parameter Setting
 * method:0:classification, 1:classification with filtering 
@@ -91,5 +106,6 @@ The directory “catalog-classification” is for classification task without fi
 ## launch the program
 
 The main java entry is in class DfcMain.java.To launch the program there are several parameters must be setting as described above.  
-    If you run the task of classification, you need to set the parameters bCateNum and btruth to be zero, then set the catalogPath
+
+If you run the task of classification, you need to set the parameters bCateNum and btruth to be zero, then set the catalogPath
 
