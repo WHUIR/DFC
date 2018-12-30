@@ -17,7 +17,7 @@ Each training sample is a document,which was preprocessed to remove stop words, 
 Example: training testing data
 
 ### Catelog File
-  Catalog file is uesd to describe category information. The catalog file of data set '20 news groups' sholud be wrote in this form : 
+Catalog file is uesd to describe category information. The catalog file of data set '20 news groups' sholud be wrote in this form : 
   Example: 
   cate 
   comp.graphics 
@@ -39,10 +39,10 @@ Example: training testing data
  
 #### Note:
 The directory “catalog-classification” is for classification task without filtering.The file only contains the categories for classification task. 
-The directory “catalog-classificationWithFiltering” is for classification with filtering task.The file contains all the categories in dataset.The specifed categories are in the heading, the remaining are irrelevant categories. 
+    The directory “catalog-classificationWithFiltering” is for classification with filtering task.The file contains all the categories in dataset.The specifed categories are in the heading, the remaining are irrelevant categories. 
     Example: 
     Classification with filtering task: med-space. med and space are specifed categories, others are irrelevant categories. 
-     cate 
+    cate 
     med 
     cate 
     space 
@@ -88,7 +88,8 @@ The directory “catalog-classificationWithFiltering” is for classification wi
 * LDAtwordPath:LDA top words path
 * resultWriter:output the predict result in file
 
-## aunch the program
-    The main java entry is in class DfcMain.java.To launch the program there are several parameters must be setting as described above.  
+## launch the program
+
+The main java entry is in class DfcMain.java.To launch the program there are several parameters must be setting as described above.  
     If you run the task of classification, you need to set the parameters bCateNum and btruth to be zero, then set the catalogPath
 
