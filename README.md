@@ -25,7 +25,6 @@ comp.graphics
 cate 
 sci.med ... 
   
-  
 If we want to combine several categories into one , take 'comp' and 'sci' as examples , then the file should be wrote like this : 
 
 Example: 
@@ -47,21 +46,14 @@ The directory “catalog-classification” is for classification task without fi
 The directory “catalog-classificationWithFiltering” is for classification with filtering task.The file contains all the categories in dataset.The specifed categories are in the heading, the remaining are irrelevant categories. 
 
 Example: 
-Classification with filtering task: med-space. med and space are specifed categories, others are irrelevant categories. 
-
-cate 
-
-med 
-
-cate 
-
-space 
-
-cate 
-sci.crypt 
-
-cate 
-
+Classification with filtering task: med-space. med and space are specifed categories, others are irrelevant categories.  
+cate  
+med  
+cate  
+space  
+cate  
+sci.crypt  
+cate  
 sci.electronics ... 
 
 # Seed Word File
